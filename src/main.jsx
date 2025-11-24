@@ -15,6 +15,21 @@ import Contact from './pages/contact'
 // Replace 'G-XXXXXXXXXX' with your actual Google Analytics Measurement ID
 const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || ''
 
+// Component to scroll to top on route changes
+const ScrollToTop = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    })
+  }, [location])
+
+  return null
+}
+
 // Component to track page views on route changes
 const PageTracker = () => {
   const location = useLocation()
@@ -33,6 +48,7 @@ const PageTracker = () => {
 const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <PageTracker />
       <Routes>
         <Route path="/" element={<Home />} />

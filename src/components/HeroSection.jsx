@@ -20,16 +20,16 @@ const HeroSection = () => {
       </div>
       
       {/* Hero Content */}
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-2xl">
           Chasing What Is Real Productions
         </h1>
-        <p className="text-xl md:text-2xl lg:text-3xl text-white mb-8 font-light drop-shadow-lg">
+        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white mb-6 sm:mb-8 font-light drop-shadow-lg px-2">
           Wildlife, Hunting & Freshwater Fishing Photography & Videography (Africa)
         </p>
         <Link 
           to="/portfolio" 
-          className="inline-block bg-brand-red hover:bg-brand-dark-red text-white px-8 py-4 rounded-lg transition-colors duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+          className="inline-block bg-brand-red hover:bg-brand-dark-red text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-300 font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 min-h-[44px] flex items-center justify-center"
         >
           View Portfolio
         </Link>

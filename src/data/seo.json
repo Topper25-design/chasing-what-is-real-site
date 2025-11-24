@@ -1,0 +1,49 @@
+{
+  "site": {
+    "title": "Chasing What Is Real Productions",
+    "description": "Authentic expedition storytelling across wildlife, hunting, and freshwater fishing media.",
+    "keywords": [
+      "expedition media",
+      "wildlife photography",
+      "hunting videography",
+      "freshwater fishing production",
+      "african lodge marketing"
+    ],
+    "author": "Chasing What Is Real Productions",
+    "url": "https://chasingwhatisreal.com"
+  },
+  "pages": {
+    "/": {
+      "title": "Chasing What Is Real Productions | Expedition Photography & Videography",
+      "description": "Hybrid stills and cinematic production for wildlife lodges, hunting expeditions, and freshwater fishing adventures throughout Southern Africa."
+    },
+    "/about": {
+      "title": "About Us | Chasing What Is Real Productions",
+      "description": "Meet the expedition photographers and filmmakers capturing authentic wildlife, hunting, and freshwater fishing stories from the Eastern Cape."
+    },
+    "/services": {
+      "title": "Services | Expedition Photography, Videography, and Media Packages",
+      "description": "Full-service wildlife, hunting, and freshwater fishing media solutions including videography, still photography, post-production, and print sales."
+    },
+    "/portfolio": {
+      "title": "Portfolio | Wildlife, Hunting, and Freshwater Fishing Media",
+      "description": "Explore curated expedition stills and video highlights showcasing our storytelling across Africa."
+    },
+    "/blog": {
+      "title": "Blog & Insights | Expedition Media Case Studies",
+      "description": "Field insights, production strategies, and case studies for lodges, outfitters, and expedition teams."
+    },
+    "/blog/freshwater-fishing-expedition-2025": {
+      "title": "Freshwater Fishing Expedition Photography & Videography – 2025 Case Study",
+      "description": "Step through our end-to-end production workflow for a freshwater expedition in the Eastern Cape, including planning, on-water capture, and deliverables."
+    },
+    "/portfolio/video-highlights": {
+      "title": "Video Highlights | Expedition Storytelling Reels",
+      "description": "Signature video highlights featuring freshwater fishing action, wildlife encounters, and hunting expeditions."
+    },
+    "/contact": {
+      "title": "Contact | Let’s Capture What’s Real",
+      "description": "Plan your next expedition media project with Chasing What Is Real Productions based in the Eastern Cape, South Africa."
+    }
+  }
+}

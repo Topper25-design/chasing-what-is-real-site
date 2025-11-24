@@ -1,0 +1,375 @@
+# Content Update Schedule & Prompt Templates
+
+## Content Update Schedule
+
+### Monthly Blog Posts
+**Frequency:** Every month  
+**Rotation:** Alternate between Freshwater Fishing Adventures, Hunting Expeditions, and Wildlife Expeditions topics  
+**Timeline:** Publish by the 15th of each month
+
+**2025 Schedule:**
+- **January:** Wildlife Expeditions
+- **February:** Freshwater Fishing Adventures
+- **March:** Hunting Expeditions
+- **April:** Wildlife Expeditions
+- **May:** Freshwater Fishing Adventures
+- **June:** Hunting Expeditions
+- **July:** Wildlife Expeditions
+- **August:** Freshwater Fishing Adventures
+- **September:** Hunting Expeditions
+- **October:** Wildlife Expeditions
+- **November:** Freshwater Fishing Adventures
+- **December:** Hunting Expeditions
+
+### Quarterly Portfolio Updates
+**Frequency:** Every quarter (3 months)  
+**Content:** Add one new portfolio project featuring both still photography and video highlights  
+**Categories:** Rotate through Stills, Video Highlights, Hunting Expeditions, Freshwater Fishing Adventures, Wildlife Expeditions
+
+**2025 Schedule:**
+- **Q1 (Jan-Mar):** Add new project to Freshwater Fishing Adventures
+- **Q2 (Apr-Jun):** Add new project to Hunting Expeditions
+- **Q3 (Jul-Sep):** Add new project to Wildlife Expeditions
+- **Q4 (Oct-Dec):** Add new project to Video Highlights
+
+### Annual Hero Section Refresh
+**Frequency:** Annually  
+**Timeline:** Update hero section image/video in January to reflect current year  
+**Example:** Update from 2025 to 2026 branding/assets
+
+**Schedule:**
+- **January 2026:** Refresh hero section for 2026
+- **January 2027:** Refresh hero section for 2027
+- (Continue annually)
+
+---
+
+## Prompt Templates for Content Updates
+
+### Blog Post Templates
+
+#### Template 1: Freshwater Fishing Expedition Blog Post
+```
+Generate a new blog post for the Freshwater Fishing Adventures category.
+
+Title format: "Freshwater Fishing Expedition Photography & Videography in [Location] – [Year] Case Study"
+
+Requirements:
+- Create file: src/pages/blog/[kebab-case-title].jsx
+- Add route in src/main.jsx
+- Add entry to blogPosts array in src/pages/blog.jsx
+- Include hero image, gallery images, and behind-the-scenes video
+- Use category tag: "Freshwater Fishing Adventures"
+- Include JSON-LD VideoObject structured data
+- Follow the structure of freshwater-fishing-expedition-2025.jsx
+- Include SEO meta tags with keyword aliases
+- Publish date: [Month Day, Year]
+
+Content should cover:
+- Expedition objectives and context
+- Pre-production scouting insights
+- On-location capture workflow
+- Deliverables and client impact
+- Technical details (gear, techniques)
+- Behind-the-scenes insights
+```
+
+#### Template 2: Hunting Expedition Blog Post
+```
+Generate a new blog post for the Hunting Expeditions category.
+
+Title format: "Tactical Media Deployment for [Lodge Type] Hunting Expeditions in [Location] – [Year]"
+
+Requirements:
+- Create file: src/pages/blog/[kebab-case-title].jsx
+- Add route in src/main.jsx
+- Add entry to blogPosts array in src/pages/blog.jsx
+- Include hero image, gallery images, and behind-the-scenes video
+- Use category tag: "Hunting Expeditions"
+- Include JSON-LD VideoObject structured data
+- Follow the structure of freshwater-fishing-expedition-2025.jsx
+- Include SEO meta tags with keyword aliases
+- Publish date: [Month Day, Year]
+
+Content should cover:
+- Lodge partnership and objectives
+- Expedition planning and logistics
+- Field capture strategies
+- Multi-format deliverables (stills + video)
+- Marketing impact and ROI
+- Conservation and ethical considerations
+```
+
+#### Template 3: Wildlife Expedition Blog Post
+```
+Generate a new blog post for the Wildlife Expeditions category.
+
+Title format: "Wildlife Expedition Storytelling: [Specific Topic/Technique] in [Location] – [Year]"
+
+Requirements:
+- Create file: src/pages/blog/[kebab-case-title].jsx
+- Add route in src/main.jsx
+- Add entry to blogPosts array in src/pages/blog.jsx
+- Include hero image, gallery images, and behind-the-scenes video
+- Use category tag: "Wildlife Expeditions"
+- Include JSON-LD VideoObject structured data
+- Follow the structure of freshwater-fishing-expedition-2025.jsx
+- Include SEO meta tags with keyword aliases
+- Publish date: [Month Day, Year]
+
+Content should cover:
+- Wildlife behavior documentation
+- Field techniques and challenges
+- Conservation storytelling
+- Lodge and safari operator partnerships
+- Technical equipment and approaches
+- Narrative structure and editing
+```
+
+---
+
+### Portfolio Update Templates
+
+#### Template 1: Add New Freshwater Fishing Project
+```
+Add a new portfolio project to the Freshwater Fishing Adventures category.
+
+Requirements:
+- Add 3-5 new items to portfolioItems array in src/pages/portfolio.jsx
+- Mix of still images and video highlights
+- Category: "Freshwater Fishing Adventures"
+- Include descriptive alt text and captions
+- Place images in public/images/portfolio/
+- Place videos in public/videos/portfolio/
+- Use descriptive filenames (e.g., freshwater-bass-kei-river-2025.jpg)
+
+Each item should include:
+- id: unique identifier
+- category: "Freshwater Fishing Adventures"
+- type: "image" or "video"
+- src: path to media file
+- alt: descriptive alt text for accessibility
+- caption: caption text for display
+
+Example items:
+- Still shots of anglers casting
+- Underwater fish photography
+- Landscape shots of fishing locations
+- Video highlights of catches
+- Behind-the-scenes footage
+```
+
+#### Template 2: Add New Hunting Expedition Project
+```
+Add a new portfolio project to the Hunting Expeditions category.
+
+Requirements:
+- Add 3-5 new items to portfolioItems array in src/pages/portfolio.jsx
+- Mix of still images and video highlights
+- Category: "Hunting Expeditions"
+- Include descriptive alt text and captions
+- Place images in public/images/portfolio/
+- Place videos in public/videos/portfolio/
+- Use descriptive filenames (e.g., hunting-kudu-eastern-cape-2025.jpg)
+
+Each item should include:
+- id: unique identifier
+- category: "Hunting Expeditions"
+- type: "image" or "video"
+- src: path to media file
+- alt: descriptive alt text for accessibility
+- caption: caption text for display
+
+Example items:
+- Trophy photography
+- Field setup and camp scenes
+- Hunter portraits
+- Wildlife tracking footage
+- Lodge and landscape shots
+```
+
+#### Template 3: Add New Wildlife Expedition Project
+```
+Add a new portfolio project to the Wildlife Expeditions category.
+
+Requirements:
+- Add 3-5 new items to portfolioItems array in src/pages/portfolio.jsx
+- Mix of still images and video highlights
+- Category: "Wildlife Expeditions"
+- Include descriptive alt text and captions
+- Place images in public/images/portfolio/
+- Place videos in public/videos/portfolio/
+- Use descriptive filenames (e.g., wildlife-elephant-kruger-2025.jpg)
+
+Each item should include:
+- id: unique identifier
+- category: "Wildlife Expeditions"
+- type: "image" or "video"
+- src: path to media file
+- alt: descriptive alt text for accessibility
+- caption: caption text for display
+
+Example items:
+- Big Five photography
+- Bird and smaller wildlife shots
+- Safari vehicle and camp scenes
+- Behavioral documentation
+- Landscape and habitat shots
+```
+
+#### Template 4: Add New Video Highlights Project
+```
+Add new video highlights to the Video Highlights category.
+
+Requirements:
+- Add 2-4 new video items to portfolioItems array in src/pages/portfolio.jsx
+- Category: "Video Highlights"
+- Include descriptive alt text and captions
+- Place videos in public/videos/portfolio/
+- Use descriptive filenames (e.g., video-highlight-fishing-reel-2025.mp4)
+
+Each item should include:
+- id: unique identifier
+- category: "Video Highlights"
+- type: "video"
+- src: path to video file
+- alt: descriptive alt text for accessibility
+- caption: caption text for display
+
+Video requirements:
+- Short clips (15-60 seconds)
+- Muted autoplay for thumbnail effect
+- High quality (1080p minimum)
+- Optimized file sizes
+```
+
+#### Template 5: Add New Stills Collection
+```
+Add new still photography collection to the Stills category.
+
+Requirements:
+- Add 5-8 new image items to portfolioItems array in src/pages/portfolio.jsx
+- Category: "Stills"
+- Include descriptive alt text and captions
+- Place images in public/images/portfolio/
+- Use descriptive filenames (e.g., still-lion-portrait-kalahari-2025.jpg)
+
+Each item should include:
+- id: unique identifier
+- category: "Stills"
+- type: "image"
+- src: path to image file
+- alt: descriptive alt text for accessibility
+- caption: caption text for display
+
+Image requirements:
+- High resolution (minimum 1920px width)
+- Optimized file sizes
+- Proper color grading
+- Consistent style with brand
+```
+
+---
+
+### Hero Section Refresh Template
+
+#### Annual Hero Refresh
+```
+Update the hero section for [Year] to reflect current year branding and showcase latest work.
+
+Requirements:
+- Update hero image/video in src/components/HeroSection.jsx
+- Replace hero media file in public/images/ or public/videos/
+- Update any year references in hero text/copy
+- Ensure new hero showcases recent portfolio work
+- Maintain brand consistency (colors, typography, tone)
+- Update alt text and captions
+- Test responsive behavior across devices
+
+Hero content should:
+- Feature current year (e.g., "2026")
+- Showcase best recent work from portfolio
+- Reflect current service offerings
+- Maintain adventurous, authentic brand voice
+- Include call-to-action aligned with current goals
+```
+
+---
+
+## Content Quality Checklist
+
+Before publishing any content update, verify:
+
+### Blog Posts
+- [ ] File created in correct location (`src/pages/blog/`)
+- [ ] Route added to `src/main.jsx`
+- [ ] Entry added to `blogPosts` array in `src/pages/blog.jsx`
+- [ ] Hero image exists in `public/images/blog/`
+- [ ] Gallery images exist in `public/images/blog/`
+- [ ] Video files exist in `public/videos/blog/` (if applicable)
+- [ ] SEO meta tags configured
+- [ ] JSON-LD structured data included
+- [ ] Category tag matches rotation schedule
+- [ ] Date formatted correctly (YYYY-MM-DD)
+- [ ] Alt text and captions included
+- [ ] Content reviewed for brand voice consistency
+
+### Portfolio Items
+- [ ] Items added to `portfolioItems` array
+- [ ] Media files placed in correct directories
+- [ ] Descriptive filenames used
+- [ ] Alt text included for accessibility
+- [ ] Captions provided
+- [ ] Category matches rotation schedule
+- [ ] Structured data automatically generated (via existing code)
+- [ ] Images optimized for web
+- [ ] Videos optimized (if applicable)
+
+### Hero Section
+- [ ] New hero media file added
+- [ ] Component updated in `src/components/HeroSection.jsx`
+- [ ] Year references updated
+- [ ] Alt text updated
+- [ ] Responsive behavior tested
+- [ ] Brand consistency maintained
+
+---
+
+## Content Calendar Tracking
+
+Use this section to track completed updates:
+
+### 2025 Blog Posts
+- [ ] January - Wildlife Expeditions
+- [ ] February - Freshwater Fishing Adventures
+- [ ] March - Hunting Expeditions
+- [ ] April - Wildlife Expeditions
+- [ ] May - Freshwater Fishing Adventures
+- [ ] June - Hunting Expeditions
+- [ ] July - Wildlife Expeditions
+- [ ] August - Freshwater Fishing Adventures
+- [ ] September - Hunting Expeditions
+- [ ] October - Wildlife Expeditions
+- [ ] November - Freshwater Fishing Adventures
+- [ ] December - Hunting Expeditions
+
+### 2025 Portfolio Updates
+- [ ] Q1 - Freshwater Fishing Adventures project
+- [ ] Q2 - Hunting Expeditions project
+- [ ] Q3 - Wildlife Expeditions project
+- [ ] Q4 - Video Highlights project
+
+### Annual Updates
+- [ ] 2026 Hero Section Refresh
+
+---
+
+## Notes
+
+- Always maintain brand voice: Bold, adventurous, authentic
+- Ensure all content aligns with brand values
+- Use brand colors consistently (#C1272D red, #000000 black, #D3D3D3 light-grey, #FFFFFF white)
+- Include proper SEO optimization for all content
+- Maintain accessibility standards (alt text, captions, semantic HTML)
+- Test all updates locally before pushing to main branch
+- Follow CI/CD pipeline for deployment

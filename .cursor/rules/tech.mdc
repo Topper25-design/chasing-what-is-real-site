@@ -1,0 +1,244 @@
+# Technical Specifications
+
+## Technology Stack
+
+### Core Framework
+
+- **Framework:** Next.js (React-based framework)
+- **React Version:** React 18+
+- **Language:** JavaScript/TypeScript (prefer TypeScript for new code)
+
+### Styling
+
+- **Primary:** Tailwind CSS for utility-first styling
+- **Alternative Options:** 
+  - CSS Modules for component-scoped styles
+  - Styled-Components for CSS-in-JS (when needed for dynamic styling)
+- **Preference:** Use Tailwind CSS as the primary styling solution
+
+### Build & Development Tools
+
+- **Package Manager:** npm (or yarn/pnpm)
+- **Build Tool:** Next.js built-in (Webpack/Turbopack)
+- **Code Quality:** ESLint + Prettier
+- **Accessibility:** ESLint JSX A11y plugin
+
+## File Structure
+
+### Next.js App Router Structure (Recommended)
+
+```
+/
+  ├─ app/                    # Next.js App Router (if using App Router)
+  │   ├─ layout.jsx
+  │   ├─ page.jsx
+  │   ├─ about/
+  │   ├─ services/
+  │   └─ ...
+  ├─ src/                     # Alternative: Pages Router
+  │   ├─ components/
+  │   ├─ pages/
+  │   ├─ styles/
+  │   └─ utils/
+  ├─ public/                  # Static assets
+  ├─ styles/                  # Global styles (if using CSS Modules)
+  └─ .next/                   # Next.js build output
+```
+
+### Component Organization
+
+- **Components:** `src/components/` or `components/`
+- **Pages:** `src/pages/` (Pages Router) or `app/` (App Router)
+- **Styles:** `src/styles/` for global, component-level for CSS Modules
+- **Utils:** `src/utils/` for helper functions
+- **Data/Config:** `src/data/` for static data
+
+## Code Standards
+
+### React Best Practices
+
+- **Functional Components:** Use functional components with hooks exclusively
+- **Hooks:** Prefer built-in hooks, create custom hooks for reusable logic
+- **Component Structure:** 
+  ```jsx
+  // Component structure
+  import React from 'react'
+  import styles from './Component.module.css' // if using CSS Modules
+  
+  const Component = ({ prop1, prop2 }) => {
+    // Hooks
+    // Logic
+    // Return JSX
+  }
+  
+  export default Component
+  ```
+
+### Styling Approach
+
+#### Tailwind CSS (Primary)
+
+- Use utility classes for styling
+- Create custom components for repeated patterns
+- Use `@apply` sparingly in CSS files
+- Configure Tailwind theme in `tailwind.config.js`
+
+#### CSS Modules (When Needed)
+
+- Use for component-scoped styles
+- File naming: `Component.module.css`
+- Import: `import styles from './Component.module.css'`
+- Use: `className={styles.className}`
+
+#### Styled-Components (Optional)
+
+- Use for dynamic, theme-based styling
+- Use for complex animations or conditional styles
+- Prefer Tailwind for static styling
+
+### Code Organization
+
+- **Modular:** Keep components small and focused
+- **Reusable:** Extract common patterns into shared components
+- **Separation of Concerns:** Separate UI, logic, and data
+- **DRY Principle:** Don't repeat yourself
+- **Single Responsibility:** Each component/function should do one thing well
+
+## Performance Optimization
+
+### Image Optimization
+
+- **Next.js Image Component:** Always use `next/image` for images
+- **Optimization:** Automatic optimization, lazy loading, responsive images
+- **Formats:** Use WebP, AVIF when possible
+- **Sizing:** Provide appropriate sizes for responsive images
+
+### Code Splitting
+
+- **Dynamic Imports:** Use `next/dynamic` for code splitting
+- **Route-Based:** Automatic code splitting per route
+- **Component-Level:** Lazy load heavy components
+
+### Bundle Optimization
+
+- **Tree Shaking:** Remove unused code
+- **Minification:** Automatic in production builds
+- **Compression:** Enable gzip/brotli compression
+- **Bundle Analysis:** Use `@next/bundle-analyzer` to monitor size
+
+### Media Optimization
+
+- **Videos:** Compress, use appropriate formats (MP4, WebM)
+- **Lazy Loading:** Implement for below-the-fold content
+- **CDN:** Use CDN for static assets
+- **Caching:** Implement proper cache headers
+
+### Performance Targets
+
+- **Lighthouse Score:** 90+ for Performance
+- **First Contentful Paint:** < 1.8s
+- **Largest Contentful Paint:** < 2.5s
+- **Time to Interactive:** < 3.8s
+- **Cumulative Layout Shift:** < 0.1
+
+## Accessibility Standards
+
+### WCAG Compliance
+
+- **Target:** WCAG 2.1 Level AA compliance minimum
+- **Level AAA:** Strive for where possible
+
+### Implementation Guidelines
+
+#### Semantic HTML
+
+- Use proper HTML5 semantic elements (`<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`)
+- Use appropriate heading hierarchy (h1 → h2 → h3)
+- Use lists (`<ul>`, `<ol>`) for list content
+
+#### ARIA Labels
+
+- Use ARIA labels when semantic HTML isn't sufficient
+- Ensure all interactive elements are accessible
+- Use `aria-label`, `aria-labelledby`, `aria-describedby` appropriately
+- Use `role` attributes when necessary
+
+#### Keyboard Navigation
+
+- All interactive elements must be keyboard accessible
+- Visible focus indicators (outline, focus ring)
+- Logical tab order
+- Skip links for main content
+
+#### Screen Reader Compatibility
+
+- Descriptive alt text for all images
+- Form labels associated with inputs
+- Error messages associated with form fields
+- Announce dynamic content changes
+
+#### Color Contrast
+
+- **Normal Text:** Minimum 4.5:1 contrast ratio
+- **Large Text:** Minimum 3:1 contrast ratio (18pt+ or 14pt+ bold)
+- **UI Components:** Minimum 3:1 contrast ratio
+- Test with tools like WebAIM Contrast Checker
+
+#### Testing
+
+- Use ESLint JSX A11y plugin
+- Test with screen readers (NVDA, JAWS, VoiceOver)
+- Keyboard-only navigation testing
+- Automated accessibility testing tools
+- Manual testing checklist
+
+## Browser Support
+
+### Target Browsers
+
+- **Modern Browsers:** Latest 2 versions of Chrome, Firefox, Safari, Edge
+- **Mobile:** iOS Safari (latest 2 versions), Chrome Mobile (latest)
+- **Progressive Enhancement:** Core functionality works everywhere, enhanced features for modern browsers
+
+### Polyfills
+
+- Use Next.js polyfills for required features
+- Consider `@next/polyfill` for older browser support if needed
+- Test on target browsers regularly
+
+## Deployment
+
+### Recommended Platform
+
+- **Vercel:** Optimal for Next.js (made by Next.js team)
+- **Alternative:** Netlify, AWS Amplify, or self-hosted
+
+### Environment Variables
+
+- Use `.env.local` for local development
+- Use `.env.production` for production
+- Never commit `.env` files to git
+- Use Vercel/Netlify environment variable settings
+
+### Build Process
+
+- **Development:** `npm run dev`
+- **Build:** `npm run build`
+- **Start:** `npm start` (production server)
+- **Lint:** `npm run lint`
+- **Format:** `npm run format`
+
+## Security
+
+- **HTTPS:** Always use HTTPS in production
+- **Environment Variables:** Never expose sensitive keys
+- **Content Security Policy:** Implement CSP headers
+- **XSS Protection:** Sanitize user inputs
+- **Dependencies:** Keep dependencies updated, audit regularly
+
+## Monitoring & Analytics
+
+- **Google Analytics:** Integrated via react-ga4
+- **Performance Monitoring:** Consider Vercel Analytics or similar
+- **Error Tracking:** Consider Sentry or similar
+- **Uptime Monitoring:** Monitor site availability

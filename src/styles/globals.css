@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  line-height: 1.2;
+}
+
+a {
+  color: #c1272d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus-visible {
+  color: #991f24;
+  text-decoration: underline;
+}
+
+button,
+.btn-primary {
+  background-color: #c1272d;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+button:focus-visible,
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: #991f24;
+}
+
+button:focus-visible,
+.btn-primary:focus-visible,
+a:focus-visible {
+  outline: 3px solid #c1272d;
+  outline-offset: 2px;
+}
+
+main section:nth-of-type(even) {
+  background-color: #d3d3d3;
+}
+
+main section:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+

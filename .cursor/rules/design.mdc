@@ -1,0 +1,128 @@
+# Design Guidelines
+
+## Design Principles
+
+- **Mobile-First Responsive:** Design for mobile devices first, then scale up
+- **Visual Content Focus:** Let photography and videography be the hero
+- **Bold & Adventurous:** Design should reflect the brand's bold, adventurous spirit
+- **Fast Performance:** Optimize for quick loading, especially for media-heavy content
+- **Accessible:** Ensure design is accessible to all users
+
+## Color Application
+
+### Header
+- **Background:** Dark/Black (`#000000`)
+- **Text:** White (`#FFFFFF`)
+- **Navigation:** High contrast for readability
+- **Style:** Fixed or sticky header for easy navigation
+
+### Background Sections
+- **Primary Background:** Light Grey (`#D3D3D3`)
+- **Usage:** Content sections, alternating backgrounds
+- **Purpose:** Create visual separation and breathing room between content areas
+
+### Call-to-Action Buttons
+- **Color:** Red (`#C1272D`)
+- **Style:** Bold, prominent, clearly visible
+- **Usage:** Primary CTAs, contact buttons, inquiry buttons
+- **Hover States:** Slightly darker red or subtle animation
+
+### Text & Contrast
+- **Primary Text:** Black (`#000000`) on light backgrounds
+- **Secondary Text:** Dark grey on light backgrounds
+- **Text on Dark:** White (`#FFFFFF`) on black/dark backgrounds
+- **Ensure WCAG AA contrast ratios:** Minimum 4.5:1 for normal text, 3:1 for large text
+
+## Layout Guidelines
+
+### Mobile-First Approach
+
+1. **Start with Mobile:** Design and develop for smallest screens first (320px+)
+2. **Progressive Enhancement:** Add features and complexity as screen size increases
+3. **Touch-Friendly:** Ensure all interactive elements are at least 44x44px
+4. **Readable Text:** Minimum 16px font size for body text on mobile
+
+### Responsive Breakpoints
+
+- **Mobile:** 320px - 767px (primary focus)
+- **Tablet:** 768px - 1023px
+- **Desktop:** 1024px - 1439px
+- **Large Desktop:** 1440px+
+
+### Grid System
+
+- **Mobile:** Single column layout
+- **Tablet:** 2-column grid where appropriate
+- **Desktop:** 3-4 column grid for galleries
+- **Flexible:** Use CSS Grid and Flexbox for responsive layouts
+
+## Component Specifications
+
+### Header
+- **Background:** Black (`#000000`)
+- **Text:** White (`#FFFFFF`)
+- **Height:** Compact on mobile, expandable navigation
+- **Position:** Fixed or sticky for easy access
+- **Logo:** Prominent, clear branding
+
+### Hero Section
+- **Full-width:** Edge-to-edge on all devices
+- **Content:** Bold headline, compelling imagery/video
+- **CTA:** Red button (`#C1272D`) prominently placed
+- **Mobile:** Stack content vertically, ensure readability
+
+### Content Sections
+- **Background:** Alternate between white and light grey (`#D3D3D3`)
+- **Padding:** Generous spacing (mobile: 1rem, desktop: 2-3rem)
+- **Max Width:** Content containers max-width for readability
+
+### Gallery Components
+- **Mobile:** Single column, full-width images
+- **Tablet:** 2-column grid
+- **Desktop:** 3-column grid
+- **Spacing:** Consistent gaps between items
+- **Lazy Loading:** Implement for performance
+
+### Forms
+- **Inputs:** Clear borders, adequate padding
+- **Labels:** Visible, accessible
+- **Submit Button:** Red (`#C1272D`) CTA button
+- **Error States:** Clear, accessible error messaging
+- **Mobile:** Full-width inputs, stacked layout
+
+### Footer
+- **Background:** Black (`#000000`) or dark grey
+- **Text:** White (`#FFFFFF`)
+- **Links:** Clear, accessible
+- **Mobile:** Stack columns vertically
+
+## Visual Hierarchy
+
+1. **Primary:** Hero sections, main CTAs (Red buttons)
+2. **Secondary:** Section headers, navigation
+3. **Tertiary:** Body content, supporting information
+4. **Use size, color, and spacing** to establish clear hierarchy
+
+## Spacing System
+
+- **Consistent Units:** Use rem or px consistently
+- **Mobile Padding:** 1rem (16px) minimum
+- **Desktop Padding:** 2-3rem (32-48px)
+- **Section Spacing:** 3-4rem between major sections
+- **Element Spacing:** 1-2rem between related elements
+
+## Image & Media Guidelines
+
+- **Optimization:** Compress all images, use modern formats (WebP, AVIF)
+- **Responsive Images:** Use srcset for different screen sizes
+- **Lazy Loading:** Implement for below-the-fold content
+- **Video:** Optimize file sizes, provide fallback images
+- **Alt Text:** Always include descriptive alt text for accessibility
+
+## Interaction Design
+
+- **Hover States:** Clear feedback on interactive elements
+- **Focus States:** Visible focus indicators for keyboard navigation
+- **Transitions:** Smooth, subtle animations (200-300ms)
+- **Loading States:** Show loading indicators for async content
+- **Error Handling:** Clear error messages and recovery paths
